@@ -1,19 +1,17 @@
 package net.infogram.api;
 
+import net.infogram.api.response.Response;
+import net.infogram.api.response.SimpleResponse;
+
+import javax.xml.bind.DatatypeConverter;
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URLEncoder;
 import java.security.InvalidKeyException;
 import java.security.SignatureException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import javax.xml.bind.DatatypeConverter;
-
-import net.infogram.api.response.SimpleResponse;
-import net.infogram.api.response.Response;
 
 /**
  * A class for building, formatting and signing the request.

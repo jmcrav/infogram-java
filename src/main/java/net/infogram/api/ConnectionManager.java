@@ -38,6 +38,7 @@ class ConnectionManager {
             throws IOException {
         String url = new String(baseUrl);
         url += "?" + Helpers.encodedParameterStringFromList(parameters);
+        System.out.println("REQUEST" + url);
         HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
         return connection;
     }
